@@ -1,0 +1,16 @@
+== output_sonnet.py
+  PASS  valid claim -> 201: 201 {"id":1}
+  PASS  missing field -> 400: 400 {"message":"claim_text must be a string"}
+  PASS  spaces only -> 400: 400 {"message":"claim_text must be 10 to 500 characters"}
+  PASS  9 chars -> 400: 400 {"message":"claim_text must be 10 to 500 characters"}
+  PASS  501 chars -> 400: 400 {"message":"claim_text must be 10 to 500 characters"}
+  PASS  number -> 400: 400 {"message":"claim_text must be a string"}
+  body shape of success: {'id': 2} | rows saved: 2
+== output_haiku.py
+  PASS  valid claim -> 201: 201 1
+  PASS  missing field -> 400: 400 {"message":"claim_text must be a string"}
+  PASS  spaces only -> 400: 400 {"message":"claim_text must be 10 to 500 characters after trimming"}
+  PASS  9 chars -> 400: 400 {"message":"claim_text must be 10 to 500 characters after trimming"}
+  PASS  501 chars -> 400: 400 {"message":"claim_text must be 10 to 500 characters after trimming"}
+  PASS  number -> 400: 400 {"message":"claim_text must be a string"}
+  body shape of success: 2 | rows saved: 2

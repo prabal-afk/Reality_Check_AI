@@ -1,0 +1,19 @@
+SELECT id, claim_text, verdict, confidence, retrieval_mode FROM claims;
+1 | The Great Wall of China is visible from space wi | Refuted | 0.95 | bundled evidence pack
+2 | Mount Everest is the tallest mountain in the wor | Mixed | None | bundled evidence pack
+3 | Humans landed on the Moon. | Supported | 0.95 | bundled evidence pack
+4 | My neighbour's cat can speak fluent Spanish. | Unverifiable | None | no evidence found
+5 | <script>alert(1)</script> is not a real claim | Unverifiable | None | no evidence found
+6 | The Earth is flat. | Refuted | 0.95 | bundled evidence pack
+7 | Humans only use 10% of their brain. | Refuted | 0.95 | bundled evidence pack
+8 | The Moon landing was faked. | Refuted | 0.95 | bundled evidence pack
+9 | The Earth is flat. | Refuted | 0.95 | bundled evidence pack
+
+SELECT claim_id, domain, stance, credibility_tier FROM evidence WHERE claim_id=1;
+1 | nasa.gov | REFUTES | 1
+1 | scientificamerican.com | REFUTES | 2
+1 | livescience.com | REFUTES | 3
+1 | en.wikipedia.org | REFUTES | 2
+
+SELECT COUNT(*) FROM sources; -> 30
+SELECT * FROM feedback; -> [(1, 8, 1, 'Clear and easy to follow', '2026-11-07 05:05:29')]

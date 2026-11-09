@@ -1,0 +1,49 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.18, pytest-9.1.1, pluggy-1.6.0 -- /usr/local/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/claude/realitycheck_ai
+plugins: platformdirs-4.13.5, anyio-4.15.1
+collecting ... collected 40 items
+
+tests/test_analysis.py::test_u01_stance_refutes_with_cue PASSED          [  2%]
+tests/test_analysis.py::test_u02_stance_supports_without_cue PASSED      [  5%]
+tests/test_analysis.py::test_u03_irrelevant_snippet_is_neutral PASSED    [  7%]
+tests/test_analysis.py::test_u04_named_subject_must_appear PASSED        [ 10%]
+tests/test_analysis.py::test_u05_negated_claim_reverses_stance PASSED    [ 12%]
+tests/test_analysis.py::test_u06_tier_lookup_and_fallbacks PASSED        [ 15%]
+tests/test_analysis.py::test_u07_verdict_refuted_supported_mixed_unverifiable PASSED [ 17%]
+tests/test_analysis.py::test_u08_tier_weights_let_one_strong_source_outweigh_weak_ones PASSED [ 20%]
+tests/test_analysis.py::test_u09_recency_weighting_only_for_time_sensitive_claims PASSED [ 22%]
+tests/test_analysis.py::test_u10_validate_claim_rules PASSED             [ 25%]
+tests/test_analysis.py::test_u11_parse_wikipedia_payload_without_network PASSED [ 27%]
+tests/test_analysis.py::test_u12_live_failure_degrades_gracefully PASSED [ 30%]
+tests/test_api.py::test_tc01_valid_claim_returns_201_and_refuted PASSED  [ 32%]
+tests/test_api.py::test_tc02_missing_claim_text_field PASSED             [ 35%]
+tests/test_api.py::test_tc03_spaces_only_rejected PASSED                 [ 37%]
+tests/test_api.py::test_tc04_too_short_rejected PASSED                   [ 40%]
+tests/test_api.py::test_tc05_too_long_rejected_and_nothing_saved PASSED  [ 42%]
+tests/test_api.py::test_tc06_wrong_type_rejected PASSED                  [ 45%]
+tests/test_api.py::test_tc07_invalid_json_body_rejected PASSED           [ 47%]
+tests/test_api.py::test_tc08_numbers_only_rejected PASSED                [ 50%]
+tests/test_api.py::test_tc09_supported_claim PASSED                      [ 52%]
+tests/test_api.py::test_tc10_mixed_claim PASSED                          [ 55%]
+tests/test_api.py::test_tc11_unverifiable_when_no_evidence PASSED        [ 57%]
+tests/test_api.py::test_tc12_negated_claim_flips_stance PASSED           [ 60%]
+tests/test_api.py::test_tc13_credibility_tiers_attached PASSED           [ 62%]
+tests/test_api.py::test_tc14_get_claim_by_id PASSED                      [ 65%]
+tests/test_api.py::test_tc15_unknown_id_returns_404 PASSED               [ 67%]
+tests/test_api.py::test_tc16_history_filter_search_and_paging PASSED     [ 70%]
+tests/test_api.py::test_tc17_sources_endpoint PASSED                     [ 72%]
+tests/test_api.py::test_tc18_feedback_saved_and_validated PASSED         [ 75%]
+tests/test_api.py::test_tc19_data_survives_restart PASSED                [ 77%]
+tests/test_api.py::test_tc20_sql_injection_text_is_stored_as_plain_text PASSED [ 80%]
+tests/test_api.py::test_tc21_html_in_claim_is_returned_as_data_not_executed PASSED [ 82%]
+tests/test_api.py::test_tc22_health_and_unknown_routes_are_json PASSED   [ 85%]
+tests/test_api.py::test_tc23_json_list_body_is_rejected_not_crashed PASSED [ 87%]
+tests/test_llm.py::test_l01_disabled_without_key PASSED                  [ 90%]
+tests/test_llm.py::test_l02_parse_valid_and_fenced_json PASSED           [ 92%]
+tests/test_llm.py::test_l03_parse_rejects_bad_output PASSED              [ 95%]
+tests/test_llm.py::test_l04_ai_labels_used_for_live_snippets PASSED      [ 97%]
+tests/test_llm.py::test_l05_falls_back_to_rules_when_ai_fails PASSED     [100%]
+
+============================== 40 passed in 0.47s ==============================

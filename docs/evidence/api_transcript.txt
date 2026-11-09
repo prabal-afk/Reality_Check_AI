@@ -1,0 +1,66 @@
+$ curl -s localhost:5055/api/health
+{"claims_stored":8,"mode":"offline","status":"ok"}
+
+$ curl -s -X POST /api/claims -d {"claim_text":"The Earth is flat."}
+{
+ "breakdown": {
+  "neutral_count": 0,
+  "refutes_count": 4,
+  "refutes_weight": 9.0,
+  "share_refute": 1.0,
+  "share_support": 0.0,
+  "supports_count": 0,
+  "supports_weight": 0.0,
+  "time_sensitive": false
+ },
+ "claim_text": "The Earth is flat.",
+ "confidence": 0.95,
+ "confidence_label": "High",
+ "created_at": "2026-11-07 05:05:43",
+ "evidence": [
+  {
+   "credibility_tier": 1,
+   "domain": "science.feedback.org",
+   "published_date": null,
+   "reason": "Curated label from the bundled evidence pack.",
+   "source_name": "Science Feedback: How we know Earth is round, not flat",
+   "stance": "REFUTES",
+   "url": "https://science.feedback.org/review/how-we-know-earth-is-round-not-flat-a-review-of-claims-and-misconceptions-about-earths-shape/"
+  },
+  {
+   "credibility_tier": 1,
+   "domain": "politifact.com",
+   "published_date": null,
+   "reason": "Curated label from the bundled evidence pack.",
+   "source_name": "PolitiFact: Earth is round and high-altitude footage doesn't prove otherwise",
+   "stance": "REFUTES",
+   "url": "https://www.politifact.com/factchecks/2024/may/29/facebook-posts/earth-is-round-and-high-altitude-footage-doesnt-pr/"
+  },
+  {
+   "credibility_tier": 2,
+   "domain": "askanexpert.asu.edu",
+   "published_date": null,
+   "reason": "Curated label from the bundled evidence pack.",
+   "source_name": "Arizona State University: How do we know the Earth is round?",
+   "stance": "REFUTES",
+   "url": "https://askanexpert.asu.edu/earthspace/top-question/flat-earth"
+  },
+  {
+   "credibility_tier": 3,
+   "domain": "mentalfloss.com",
+   "published_date": null,
+   "reason": "Curated label from the bundled evidence pack.",
+   "source_name": "Mental Floss: The science behind why the Earth is not flat",
+   "stance": "REFUTES",
+   "url": "https://www.mentalfloss.com/sci
+
+$ curl -i -X POST /api/claims -d {"claim_text":"Hi"}
+HTTP/1.1 400 BAD REQUEST
+{"error":"The claim is too short; write at least 10 characters."}
+
+$ curl -i /api/claims/99999
+HTTP/1.1 404 NOT FOUND
+{"error":"Claim not found."}
+
+$ curl -s "/api/claims?verdict=Refuted&per_page=2"
+{"items":[{"claim_text":"The Earth is flat.","confidence":0.95,"created_at":"2026-11-07 05:05:43","id":9,"verdict":"Refuted"},{"claim_text":"The Moon landing was faked.","confidence":0.95,"created_at":"2026-11-07 05:05:29","id":8,"verdict":"Refuted"}],"page":1,"per_page":2,"total":5}

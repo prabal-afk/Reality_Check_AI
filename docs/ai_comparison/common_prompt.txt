@@ -1,0 +1,2 @@
+You are helping a first-year B.Tech student build a Flask + SQLite project.
+Write only the POST /api/claims route. JSON field: claim_text. Validate that it is a non-empty string of 10 to 500 characters after trimming. Do not use an ORM. Use parameterized SQL. On success insert a row into claims with verdict 'Pending' and return HTTP 201 with the integer id. On validation error return HTTP 400 with a JSON message. Assume get_db() already returns a sqlite3 connection. Keep the code under 35 lines and explain it after the block.

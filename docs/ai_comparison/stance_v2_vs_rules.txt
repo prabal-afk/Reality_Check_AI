@@ -1,0 +1,6 @@
+id | LLM prompt-v2 label | project rule-based label | agree
+1 | REFUTES | REFUTES | yes
+2 | NEUTRAL | NEUTRAL | yes
+3 | REFUTES | NEUTRAL | NO
+4 | REFUTES | NEUTRAL | NO
+agreement: 2 / 4

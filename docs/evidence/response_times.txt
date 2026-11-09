@@ -1,0 +1,1 @@
+20 POST /api/claims requests (offline pack, local server): mean 3.3 ms, max 7.5 ms

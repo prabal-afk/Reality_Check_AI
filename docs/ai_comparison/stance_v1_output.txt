@@ -1,0 +1,4 @@
+(Claude Haiku 5.5, prompt v1: "Write a fact checker that tells me if a claim is true. Claim: ...")
+Verdict: False. The Great Wall is not visible to the naked eye from space ... [answered from the model's memory]
+It then produced a script that calls the Anthropic API (client = Anthropic(), model="claude-haiku-5-5"), needs a paid API key,
+hard-codes two evidence strings written by the model itself, and returns a 6-way verdict with a free-text "sources" list.

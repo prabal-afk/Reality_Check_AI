@@ -1,0 +1,24 @@
+== output_chatgpt.py
+ PASS valid claim -> 201 : 201 {"id":1}
+ PASS missing field -> 400 : 400 {"message":"claim_text must be a string"}
+ PASS spaces only -> 400 : 400 {"message":"Claim must be between 10 and 500 characters"}
+ PASS 9 chars -> 400 : 400 {"message":"Claim must be between 10 and 500 characters"}
+ PASS 501 chars -> 400 : 400 {"message":"Claim must be between 10 and 500 characters"}
+ PASS number -> 400 : 400 {"message":"claim_text must be a string"}
+  success body: {'id': 2} | rows: 2
+  lines in function: 20
+== output_gemini.py
+ PASS valid claim -> 201 : 201 {"id":1}
+ PASS missing field -> 400 : 400 {"error":"claim_text must be a string."}
+ PASS spaces only -> 400 : 400 {"error":"claim_text must be between 10 and 500 characters after trimming."}
+ PASS 9 chars -> 400 : 400 {"error":"claim_text must be between 10 and 500 characters after trimming."}
+ PASS 501 chars -> 400 : 400 {"error":"claim_text must be between 10 and 500 characters after trimming."}
+ PASS number -> 400 : 400 {"error":"claim_text must be a string."}
+  success body: {'id': 2} | rows: 2
+  lines in function: 24
+
+Extra check: JSON body is a list, e.g. [1,2,3] (not an object)
+  output_chatgpt.py -> 400
+  output_gemini.py -> 500
+  output_sonnet.py -> 500
+  output_haiku.py -> 500

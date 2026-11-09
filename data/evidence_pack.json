@@ -1,0 +1,84 @@
+{
+  "_about": "Bundled evidence pack used when the app is offline and for repeatable demos. Each snippet is a short paraphrase written for this project of what the linked page says; open the link for the original wording. Stance labels were assigned by the student/author, not by software.",
+  "propositions": [
+    {
+      "id": "great-wall-space",
+      "text": "The Great Wall of China is visible from space with the naked eye.",
+      "items": [
+        {"source_name": "NASA: China's Wall Less Great in View from Space", "url": "https://www.nasa.gov/wp-content/uploads/static/history/PDFs/great_wall_less_great_from_space.pdf", "stance": "REFUTES", "snippet": "NASA reports that the Great Wall is very long but narrow, so it is hard to pick out from low Earth orbit with the unaided eye. The idea that it is easily visible from space is not supported."},
+        {"source_name": "Scientific American: Is China's Great Wall Visible from Space?", "url": "https://www.scientificamerican.com/article/is-chinas-great-wall-visible-from-space/", "stance": "REFUTES", "snippet": "Chinese astronaut Yang Liwei said he could not see the Great Wall during his 2003 orbital flight, and the claim that the Wall is visible from space is widely treated as a myth."},
+        {"source_name": "Live Science: Great Wall of China and visibility from space", "url": "https://www.livescience.com/34212-great-wall-of-china-only-manmade-object-visible-from-space.html", "stance": "REFUTES", "snippet": "The Wall is only a few metres wide in most places and built of materials close in colour to the land, so it cannot be picked out from orbit without magnification. The claim that it is visible from the Moon is false."},
+        {"source_name": "Wikipedia: Great Wall of China", "url": "https://en.wikipedia.org/wiki/Great_Wall_of_China", "stance": "REFUTES", "snippet": "The belief that the Great Wall can be seen from space is a common misconception; astronauts report that it is not easily visible to the naked eye."}
+      ]
+    },
+    {
+      "id": "ten-percent-brain",
+      "text": "Humans use only 10 percent of their brain.",
+      "items": [
+        {"source_name": "Wikipedia: Ten percent of the brain myth", "url": "https://en.wikipedia.org/wiki/Ten_percent_of_brain_myth", "stance": "REFUTES", "snippet": "The ten percent of the brain myth is the false belief that humans use only a small part of their brain. Brain imaging shows activity throughout the brain and no area is completely inactive."},
+        {"source_name": "Scientific American: Do People Only Use 10 Percent of Their Brains?", "url": "https://www.scientificamerican.com/article/do-people-only-use-10-percent-of-their-brains/", "stance": "REFUTES", "snippet": "Brain scans show that people use virtually all of their brain over a day. Even during sleep many areas stay active, and damage to almost any region has consequences."},
+        {"source_name": "BBC Science Focus: why the 10 per cent brain myth needs to die", "url": "https://www.sciencefocus.com/news/myth-use-10-per-cent-brain", "stance": "REFUTES", "snippet": "Neuroscientists say the idea that we use only 10 percent of our brain is a myth with no scientific basis."},
+        {"source_name": "Psychology Today: Do we use only 10 percent of our brain?", "url": "https://www.psychologytoday.com/us/blog/consciousness-and-the-brain/201106/do-we-use-only-10-percent-our-brain", "stance": "REFUTES", "snippet": "Brain imaging shows no silent areas. Humans use all of their brain, and the 10 percent claim is a misconception."}
+      ]
+    },
+    {
+      "id": "earth-flat",
+      "text": "The Earth is flat.",
+      "items": [
+        {"source_name": "Science Feedback: How we know Earth is round, not flat", "url": "https://science.feedback.org/review/how-we-know-earth-is-round-not-flat-a-review-of-claims-and-misconceptions-about-earths-shape/", "stance": "REFUTES", "snippet": "A review of flat Earth claims explains that ships disappearing hull-first over the horizon, the curved shadow in lunar eclipses and satellite imagery show that the Earth is not flat but a sphere (an oblate spheroid)."},
+        {"source_name": "PolitiFact: Earth is round and high-altitude footage doesn't prove otherwise", "url": "https://www.politifact.com/factchecks/2024/may/29/facebook-posts/earth-is-round-and-high-altitude-footage-doesnt-pr/", "stance": "REFUTES", "snippet": "PolitiFact rated posts claiming that high-altitude footage proves the Earth is flat as false; the Earth is round."},
+        {"source_name": "Arizona State University: How do we know the Earth is round?", "url": "https://askanexpert.asu.edu/earthspace/top-question/flat-earth", "stance": "REFUTES", "snippet": "University experts explain how we know the Earth is round, from the curved shadow in lunar eclipses to circumnavigation and satellite observations, so the flat Earth idea is wrong."},
+        {"source_name": "Mental Floss: The science behind why the Earth is not flat", "url": "https://www.mentalfloss.com/science/space/science-behind-why-earth-not-flat", "stance": "REFUTES", "snippet": "Time zones, ships dropping below the horizon and the curved shadow of the Earth all show that the Earth is not flat."}
+      ]
+    },
+    {
+      "id": "earth-round",
+      "text": "The Earth is round.",
+      "items": [
+        {"source_name": "Science Feedback: How we know Earth is round, not flat", "url": "https://science.feedback.org/review/how-we-know-earth-is-round-not-flat-a-review-of-claims-and-misconceptions-about-earths-shape/", "stance": "SUPPORTS", "snippet": "Evidence from ships over the horizon, lunar eclipses and satellite imagery shows that the Earth is round: a slightly flattened sphere known as an oblate spheroid."},
+        {"source_name": "Arizona State University: How do we know the Earth is round?", "url": "https://askanexpert.asu.edu/earthspace/top-question/flat-earth", "stance": "SUPPORTS", "snippet": "Observations such as the curved shadow on the Moon during lunar eclipses, circumnavigation and satellite views confirm that the Earth is round."},
+        {"source_name": "Popular Science: 10 ways you can tell the Earth is round", "url": "https://www.popsci.com/10-ways-you-can-prove-earth-is-round", "stance": "SUPPORTS", "snippet": "Anyone can check that the Earth is round: ships vanish hull-first over the horizon and different stars are visible from different latitudes."},
+        {"source_name": "Star Walk: 7 ways to prove the Earth is round", "url": "https://starwalk.space/en/news/7-ways-to-prove-the-earth-is-round", "stance": "SUPPORTS", "snippet": "Seven observations, including the Earth's round shadow on the Moon and time zones, prove that the Earth is round."}
+      ]
+    },
+    {
+      "id": "moon-faked",
+      "text": "The Moon landing was faked.",
+      "items": [
+        {"source_name": "Physics Today: The scientific legacy of the Apollo program", "url": "https://physicstoday.aip.org/features/the-scientific-legacy-of-the-apollo-program", "stance": "REFUTES", "snippet": "The scientific legacy of Apollo, with returned lunar samples and seismic and laser-ranging experiments studied by scientists worldwide, is inconsistent with the claim that the Moon landing was faked."},
+        {"source_name": "Popular Science: 7 easy ways to tell the Moon landing really happened", "url": "https://www.popsci.com/proof-moon-landing-not-fake/", "stance": "REFUTES", "snippet": "There is no evidence that the Moon landing was faked. Laser reflectors left on the Moon by Apollo crews are still used by observatories today."},
+        {"source_name": "Space Place: Evidence that NASA did land on the Moon", "url": "https://www.spacecentre.nz/resources/faq/spaceflight/moon-hoax/evidence-for.html", "stance": "REFUTES", "snippet": "Lunar rocks, retroreflectors and independent tracking of the Apollo missions are evidence that the Moon landing was not faked."},
+        {"source_name": "Wikipedia: Moon landing conspiracy theories", "url": "https://en.wikipedia.org/wiki/Moon_landing_conspiracy_theories", "stance": "REFUTES", "snippet": "Moon landing conspiracy theories claim that the landings were faked. These claims have been refuted by evidence, and there is no credible evidence that the Moon landing was staged."}
+      ]
+    },
+    {
+      "id": "moon-landed",
+      "text": "Humans landed on the Moon.",
+      "items": [
+        {"source_name": "Wikipedia: Apollo 11", "url": "https://en.wikipedia.org/wiki/Apollo_11", "stance": "SUPPORTS", "snippet": "Apollo 11 in 1969 was the first spaceflight to land humans on the Moon. Neil Armstrong and Buzz Aldrin landed while Michael Collins stayed in lunar orbit."},
+        {"source_name": "Physics Today: The scientific legacy of the Apollo program", "url": "https://physicstoday.aip.org/features/the-scientific-legacy-of-the-apollo-program", "stance": "SUPPORTS", "snippet": "Apollo crews landed on the Moon and brought back lunar samples and set up experiments whose results are still studied by scientists."},
+        {"source_name": "Popular Science: 7 easy ways to tell the Moon landing really happened", "url": "https://www.popsci.com/proof-moon-landing-not-fake/", "stance": "SUPPORTS", "snippet": "Humans landed on the Moon, and anyone can check the evidence: lunar rocks in laboratories around the world and reflectors on the surface that are still used."},
+        {"source_name": "Space Place: Evidence that NASA did land on the Moon", "url": "https://www.spacecentre.nz/resources/faq/spaceflight/moon-hoax/evidence-for.html", "stance": "SUPPORTS", "snippet": "Evidence that humans landed on the Moon includes lunar samples, retroreflectors left on the surface and independent tracking of the missions."}
+      ]
+    },
+    {
+      "id": "everest-highest",
+      "text": "Mount Everest is the highest mountain above sea level.",
+      "items": [
+        {"source_name": "Encyclopaedia Britannica: Mount Everest", "url": "https://www.britannica.com/place/Mount-Everest", "stance": "SUPPORTS", "snippet": "Mount Everest, in the Himalayas on the Nepal-China border, is Earth's highest mountain above sea level, with an officially recognised height of 8,848.86 metres."},
+        {"source_name": "National Geographic Education: Mount Everest", "url": "https://education.nationalgeographic.org/resource/mount-everest/", "stance": "SUPPORTS", "snippet": "Mount Everest is the highest mountain on Earth when measured above sea level."},
+        {"source_name": "Guinness World Records: Highest mountain", "url": "https://www.guinnessworldrecords.com/world-records/highest-mountain", "stance": "SUPPORTS", "snippet": "Guinness World Records lists Mount Everest as the highest mountain above sea level on Earth."}
+      ]
+    },
+    {
+      "id": "everest-tallest",
+      "text": "Mount Everest is the tallest mountain in the world.",
+      "items": [
+        {"source_name": "Encyclopaedia Britannica: Mount Everest", "url": "https://www.britannica.com/place/Mount-Everest", "stance": "SUPPORTS", "snippet": "Mount Everest is usually called the tallest mountain in the world because its summit is the highest point above sea level, at 8,848.86 metres."},
+        {"source_name": "National Geographic Education: Mount Everest", "url": "https://education.nationalgeographic.org/resource/mount-everest/", "stance": "SUPPORTS", "snippet": "Everest is the tallest mountain in the world if height is measured as elevation above sea level."},
+        {"source_name": "Wikipedia: Mauna Kea", "url": "https://en.wikipedia.org/wiki/Mauna_Kea", "stance": "REFUTES", "snippet": "Measured from its base on the ocean floor to its summit, Mauna Kea in Hawaii is taller than Mount Everest, although its summit is much lower above sea level."},
+        {"source_name": "Wikipedia: Chimborazo", "url": "https://en.wikipedia.org/wiki/Chimborazo", "stance": "REFUTES", "snippet": "Because the Earth bulges at the equator, the summit of Chimborazo in Ecuador is the farthest point on the surface from the centre of the Earth, even though Everest is higher above sea level."}
+      ]
+    }
+  ]
+}

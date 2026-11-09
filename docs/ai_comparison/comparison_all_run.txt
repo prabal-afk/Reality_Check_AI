@@ -1,0 +1,40 @@
+== output_chatgpt.py
+ PASS valid claim -> 201 : 201 {"id":1}
+ PASS missing field -> 400 : 400 {"message":"claim_text must be a string"}
+ PASS spaces only -> 400 : 400 {"message":"Claim must be between 10 and 500 characters"}
+ PASS 9 chars -> 400 : 400 {"message":"Claim must be between 10 and 500 characters"}
+ PASS 501 chars -> 400 : 400 {"message":"Claim must be between 10 and 500 characters"}
+ PASS number -> 400 : 400 {"message":"claim_text must be a string"}
+  success body: {'id': 2} | rows: 2
+  PASS JSON list body [1,2,3] -> 400 : 400
+  lines in function: 20
+== output_gemini.py
+ PASS valid claim -> 201 : 201 {"id":1}
+ PASS missing field -> 400 : 400 {"error":"claim_text must be a string."}
+ PASS spaces only -> 400 : 400 {"error":"claim_text must be between 10 and 500 characters after trimming."}
+ PASS 9 chars -> 400 : 400 {"error":"claim_text must be between 10 and 500 characters after trimming."}
+ PASS 501 chars -> 400 : 400 {"error":"claim_text must be between 10 and 500 characters after trimming."}
+ PASS number -> 400 : 400 {"error":"claim_text must be a string."}
+  success body: {'id': 2} | rows: 2
+  FAIL JSON list body [1,2,3] -> 400 : 500
+  lines in function: 24
+== output_sonnet.py
+ PASS valid claim -> 201 : 201 {"id":1}
+ PASS missing field -> 400 : 400 {"message":"claim_text must be a string"}
+ PASS spaces only -> 400 : 400 {"message":"claim_text must be 10 to 500 characters"}
+ PASS 9 chars -> 400 : 400 {"message":"claim_text must be 10 to 500 characters"}
+ PASS 501 chars -> 400 : 400 {"message":"claim_text must be 10 to 500 characters"}
+ PASS number -> 400 : 400 {"message":"claim_text must be a string"}
+  success body: {'id': 2} | rows: 2
+  FAIL JSON list body [1,2,3] -> 400 : 500
+  lines in function: 16
+== output_haiku.py
+ PASS valid claim -> 201 : 201 1
+ PASS missing field -> 400 : 400 {"message":"claim_text must be a string"}
+ PASS spaces only -> 400 : 400 {"message":"claim_text must be 10 to 500 characters after trimming"}
+ PASS 9 chars -> 400 : 400 {"message":"claim_text must be 10 to 500 characters after trimming"}
+ PASS 501 chars -> 400 : 400 {"message":"claim_text must be 10 to 500 characters after trimming"}
+ PASS number -> 400 : 400 {"message":"claim_text must be a string"}
+  success body: 2 | rows: 2
+  FAIL JSON list body [1,2,3] -> 400 : 500
+  lines in function: 16
